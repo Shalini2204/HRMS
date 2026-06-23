@@ -6,8 +6,8 @@ export default defineConfig({
   use: {
     baseURL: 'https://hrms.keelis.in',
 
-    // Run headless in CI
-    headless: !!process.env.CI,
+    // Force headless mode
+    headless: true,
 
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
